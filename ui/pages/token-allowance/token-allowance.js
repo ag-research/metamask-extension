@@ -516,6 +516,14 @@ export default function TokenAllowance({
           />
         </Box>
       )}
+      <Box marginTop={4} marginRight={4} marginLeft={4}>
+        <FeeDetailsComponent
+          supportsEIP1559={supportsEIP1559}
+          useCurrencyRateCheck={useCurrencyRateCheck}
+          txData={txData}
+          shouldShow={!isFirstPage}
+        />
+      </Box>
       {useNonceField && (
         <Box marginTop={4} marginRight={4} marginLeft={4}>
           <CustomNonce
@@ -533,14 +541,6 @@ export default function TokenAllowance({
           />
         </Box>
       )}
-      <Box marginTop={4} marginRight={4} marginLeft={4}>
-        <FeeDetailsComponent
-          supportsEIP1559={supportsEIP1559}
-          useCurrencyRateCheck={useCurrencyRateCheck}
-          txData={txData}
-          shouldShow={!isFirstPage}
-        />
-      </Box>
       <Box
         display={DISPLAY.FLEX}
         flexDirection={FLEX_DIRECTION.ROW}
