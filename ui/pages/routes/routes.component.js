@@ -120,7 +120,6 @@ import NewNetworkInfo from '../../components/ui/new-network-info/new-network-inf
 import { ThemeType } from '../../../shared/constants/preferences';
 import { Box } from '../../components/component-library';
 import { ToggleIpfsModal } from '../../components/app/nft-default-image/toggle-ipfs-modal';
-import { Display, FlexDirection } from '../../helpers/constants/design-system';
 
 export default class Routes extends Component {
   static propTypes = {
@@ -149,6 +148,7 @@ export default class Routes extends Component {
     theme: PropTypes.string,
     sendStage: PropTypes.string,
     isNetworkUsed: PropTypes.bool,
+    unapprovedTransactions: PropTypes.object,
     allAccountsOnNetworkAreEmpty: PropTypes.bool,
     isTestNet: PropTypes.bool,
     currentChainId: PropTypes.string,
@@ -473,6 +473,39 @@ export default class Routes extends Component {
     return isHandlingPermissionsRequest || isHandlingAddEthereumChainRequest;
   }
 
+  hideFooter() {
+    const { location, sendStage, unapprovedTransactions } = this.props;
+    const isTransactionEditPage = [
+      SEND_STAGES.EDIT,
+      SEND_STAGES.DRAFT,
+      SEND_STAGES.ADD_RECIPIENT,
+    ].includes(sendStage);
+    const isConfirmationPage = Boolean(
+      matchPath(location.pathname, {
+        path: CONFIRM_TRANSACTION_ROUTE,
+        exact: false,
+      }),
+    );
+    const isSwapsPage = Boolean(
+      matchPath(location.pathname, { path: SWAPS_ROUTE, exact: false }),
+    );
+    const isSwapsBuildQuotePage = Boolean(
+      matchPath(location.pathname, { path: BUILD_QUOTE_ROUTE, exact: false }),
+    );
+
+    const hasUnapprovedTransactions =
+      Object.keys(unapprovedTransactions).length > 0;
+
+    const hideFooterOnPages =
+      isSwapsPage ||
+      isTransactionEditPage ||
+      isConfirmationPage ||
+      isSwapsBuildQuotePage ||
+      hasUnapprovedTransactions;
+
+    return hideFooterOnPages;
+  }
+
   showOnboardingHeader() {
     const { location } = this.props;
 
@@ -600,7 +633,7 @@ export default class Routes extends Component {
           {!isLoading && isNetworkLoading ? <LoadingNetwork /> : null}
           {this.renderRoutes()}
         </Box>
-        {!this.hideAppHeader() && <AppFooter location={location} />}
+        {!this.hideFooter() && <AppFooter location={location} />}
         {isUnlocked ? <Alerts history={this.props.history} /> : null}
       </div>
     );
