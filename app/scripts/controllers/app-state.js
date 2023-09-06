@@ -53,7 +53,7 @@ export default class AppStateController extends EventEmitter {
       // multiple networks.
       hadAdvancedGasFeesSetPriorToMigration92_3: false,
       ...initState,
-      qrHardware: {},
+      qrHardwarePopoverState: {},
       nftsDropdownState: {},
       usedNetworks: {
         '0x1': true,
@@ -371,6 +371,18 @@ export default class AppStateController extends EventEmitter {
   updateNftDropDownState(nftsDropdownState) {
     this.store.updateState({
       nftsDropdownState,
+    });
+  }
+
+  /**
+   * Update the state of the QR hardware popover
+   *
+   * @param qrHardwarePopoverState
+   * @returns {void}
+   */
+  updateQRHardwarePopoverState(qrHardwarePopoverState) {
+    this.store.updateState({
+      qrHardwarePopoverState,
     });
   }
 

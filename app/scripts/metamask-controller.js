@@ -3279,7 +3279,7 @@ export default class MetamaskController extends EventEmitter {
   }
 
   /**
-   * Fetch account list from a trezor device.
+   * Fetch account list from an hardware device.
    *
    * @param deviceName
    * @param page
@@ -3288,6 +3288,17 @@ export default class MetamaskController extends EventEmitter {
    */
   async connectHardware(deviceName, page, hdPath) {
     const keyring = await this.getKeyringForDevice(deviceName, hdPath);
+
+    if (deviceName === HardwareDeviceNames.qr) {
+      keyring
+        .getMemStore()
+        .subscribe(
+          this.appStateController.updateQRHardwarePopoverState.bind(
+            this.appStateController,
+          ),
+        );
+    }
+
     let accounts = [];
     switch (page) {
       case -1:
