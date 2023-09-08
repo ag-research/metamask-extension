@@ -4099,9 +4099,17 @@
   "snapsNoInsight": {
     "message": "Этот snap не выдал никакой аналитики"
   },
+  "snapsPrivacyWarningFirstMessage": {
+    "message": "Вы признаете, что Snap, который вы устанавливаете, является Сторонней службой, как она определена в $1 Consensys, кроме случаев, когда он определяется иначе. Использование вами Сторонних служб регулируется отдельными положениями и условиями, установленными сторонним поставщиком услуг. Consensys не рекомендует использовать Snap каком-либо конкретному лицу по какой-либо конкретной причине. Вы получаете доступ к Сторонней службе, полагаетесь на нее или используете его на свой страх и риск. Consensys отказывается от любой ответственности и ответственности за любые убытки, связанные с использованием вами сторонних услуг.",
+    "description": "First part of a message in popup modal displayed when installing a snap for the first time. $1 is terms of use link."
+  },
   "snapsPrivacyWarningSecondMessage": {
     "message": "Любая информация, которую вы передаете Сторонним службам, будет собираться непосредственно этими Сторонними службами в соответствии с их политикой конфиденциальности. Пожалуйста, обратитесь к их политике конфиденциальности для получения дополнительной информации.",
     "description": "Second part of a message in popup modal displayed when installing a snap for the first time."
+  },
+  "snapsPrivacyWarningThirdMessage": {
+    "message": "Consensys не имеет доступа к информации, которую вы передаете Сторонним службам.",
+    "description": "Third part of a message in popup modal displayed when installing a snap for the first time."
   },
   "snapsSettingsDescription": {
     "message": "Управление вашим Snaps"

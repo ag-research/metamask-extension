@@ -4099,9 +4099,17 @@
   "snapsNoInsight": {
     "message": "Snap không trả về bất kỳ thông tin chi tiết nào"
   },
+  "snapsPrivacyWarningFirstMessage": {
+    "message": "Bạn thừa nhận rằng mọi Snap mà bạn cài đặt đều là Dịch vụ bên thứ ba, trừ khi được xác định khác, như được định nghĩa trong $1 của Consensys. Việc bạn sử dụng Dịch vụ bên thứ ba sẽ phải tuân theo các điều khoản và điều kiện riêng do nhà cung cấp Dịch vụ bên thứ ba quy định. Consensys không khuyến nghị bất kỳ cá nhân cụ thể nào sử dụng bất kỳ Snap nào vì bất kỳ lý do cụ thể nào. Bạn tự chịu rủi ro khi truy cập, tin tưởng hoặc sử dụng Dịch vụ bên thứ ba. Consensys từ chối mọi trách nhiệm và nghĩa vụ pháp lý đối với mọi tổn thất khi bạn sử dụng Dịch vụ bên thứ ba.",
+    "description": "First part of a message in popup modal displayed when installing a snap for the first time. $1 is terms of use link."
+  },
   "snapsPrivacyWarningSecondMessage": {
     "message": "Mọi thông tin mà bạn chia sẻ với Dịch vụ bên thứ ba sẽ được Dịch vụ bên thứ ba đó thu thập trực tiếp theo chính sách quyền riêng tư của họ. Vui lòng tham khảo chính sách quyền riêng tư của họ để biết thêm thông tin.",
     "description": "Second part of a message in popup modal displayed when installing a snap for the first time."
+  },
+  "snapsPrivacyWarningThirdMessage": {
+    "message": "Consensys không có quyền truy cập vào các thông tin mà bạn chia sẻ với Dịch vụ bên thứ ba.",
+    "description": "Third part of a message in popup modal displayed when installing a snap for the first time."
   },
   "snapsSettingsDescription": {
     "message": "Quản lý Snap"

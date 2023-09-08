@@ -4099,9 +4099,17 @@
   "snapsNoInsight": {
     "message": "Snap ने कोई इनसाइट नहीं लौटाई"
   },
+  "snapsPrivacyWarningFirstMessage": {
+    "message": "आप स्वीकार करते हैं कि आपके द्वारा इंस्टॉल किया गया कोई भी Snap एक तृतीय पक्ष सेवा है, जब तक कि अन्यथा पहचाना न जाए, जैसा कि Consensys $1 में परिभाषित किया गया है। आपके द्वारा तृतीय पक्ष सेवाओं का उपयोग तृतीय पक्ष सेवा प्रदाता द्वारा निर्धारित अलग-अलग नियमों और शर्तों द्वारा नियंत्रित होता है। Consensys किसी विशेष कारण से किसी भी व्यक्ति द्वारा किसी भी Snap के उपयोग की सुझाव नहीं देता है। आप अपने जोखिम पर तृतीय पक्ष के सेवा की ऐक्सेस पाते हैं, उस पर भरोसा करते हैं या उसका उपयोग करते हैं। आपके द्वारा तृतीय पक्ष की सेवाओं के उपयोग के कारण होने वाले किसी भी नुकसान के लिए Consensys सभी जिम्मेदारी और उत्तरदायित्व से इनकार करता है।",
+    "description": "First part of a message in popup modal displayed when installing a snap for the first time. $1 is terms of use link."
+  },
   "snapsPrivacyWarningSecondMessage": {
     "message": "थर्ड पार्टी सेवाओं के साथ आप जो भी सूचना शेयर करते हैं, उसे उन थर्ड पार्टी सेवाओं द्वारा उनकी अपनी गोपनीयता नीतियों के अनुसार सीधे एकत्र की जाएगी। अधिक जानकारी के लिए कृपया उनकी गोपनीयता नीतियां देखें।",
     "description": "Second part of a message in popup modal displayed when installing a snap for the first time."
+  },
+  "snapsPrivacyWarningThirdMessage": {
+    "message": "Consensys के पास तृतीय पक्ष की सेवाओं के साथ आपके द्वारा साझा की गई जानकारी की कोई ऐक्सेस नहीं है।",
+    "description": "Third part of a message in popup modal displayed when installing a snap for the first time."
   },
   "snapsSettingsDescription": {
     "message": "अपने Snaps प्रबंधित करें"

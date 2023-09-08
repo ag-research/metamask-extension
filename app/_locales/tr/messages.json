@@ -715,10 +715,10 @@
     "message": "CoinGecko"
   },
   "configureSnapPopupDescription": {
-    "message": "Şu anda bu snapi yapılandırmak için MetaMask'tan ayrılıyorsunuz."
+    "message": "Şu anda bu snapi yapılandırmak için MetaMask'ten ayrılıyorsunuz."
   },
   "configureSnapPopupInstallDescription": {
-    "message": "Şu anda bu snapi yüklemek için MetaMask'tan ayrılıyorsunuz."
+    "message": "Şu anda bu snapi yüklemek için MetaMask'ten ayrılıyorsunuz."
   },
   "configureSnapPopupInstallTitle": {
     "message": "Snapi yükle"
@@ -3222,7 +3222,7 @@
     "description": "The description for the `snap_getEntropy` permission"
   },
   "permission_getEntropyDescription": {
-    "message": "Snapin, ifşa etmeden, bu snap'e özel rastgele anahtarlar türetmesine izin verin. Bu anahtarlar MetaMask hesap veya hesaplarınızdan ayrıdır ve özel anahtarlarınızla ya da Gizli Kurtarma İfadenizle bağlantılı değildir. Diğer snapler bu bilgilere erişim sağlayamaz.",
+    "message": "Snapin, ifşa etmeden, bu snape özel rastgele anahtarlar türetmesine izin verin. Bu anahtarlar MetaMask hesap veya hesaplarınızdan ayrıdır ve özel anahtarlarınızla ya da Gizli Kurtarma İfadenizle bağlantılı değildir. Diğer snapler bu bilgilere erişim sağlayamaz.",
     "description": "An extended description for the `snap_getEntropy` permission"
   },
   "permission_lifecycleHooks": {
@@ -4099,9 +4099,17 @@
   "snapsNoInsight": {
     "message": "Snap herhangi bir ayrıntıya ulaşamadı"
   },
+  "snapsPrivacyWarningFirstMessage": {
+    "message": "Yüklediğiniz her Snap'in Consensys $1 içinde tanımlanan şekilde, aksi belirtilmedikçe bir Üçüncü Taraf Hizmet olduğunu kabul edersiniz. Üçüncü Taraf Hizmetlerini kullanımınız Üçüncü Taraf Hizmet sağlayıcısı tarafından belirtilen ayrı şart ve koşullar tarafından yönetilir. Consensys herhangi bir Snapin herhangi belirli bir sebeple herhangi belirli bir şahıs tarafından kullanımını önermez. Üçüncü Taraf Hizmetine erişiminizin, güvenmenizin veya kullanımınızın riski size aittir. Consensys, Üçüncü Taraf Hizmetlerini kullanımınızdan kaynaklanan zararlar için her türlü sorumluluğu ve yükümlülüğü reddeder.",
+    "description": "First part of a message in popup modal displayed when installing a snap for the first time. $1 is terms of use link."
+  },
   "snapsPrivacyWarningSecondMessage": {
     "message": "Üçüncü Taraf Hizmetleri ile paylaştığınız tüm bilgiler söz konusu Üçüncü Taraf Hizmetlerinin gizlilik politikalarına göre doğrudan üçüncü taraflar tarafından toplanacaktır. Daha fazla bilgi için lütfen üçüncü tarafların gizlilik politikalarına bakın.",
     "description": "Second part of a message in popup modal displayed when installing a snap for the first time."
+  },
+  "snapsPrivacyWarningThirdMessage": {
+    "message": "Consensys'un bu Üçüncü Taraf Hizmetler ile paylaştığınız bilgilere hiçbir erişimi bulunmamaktadır.",
+    "description": "Third part of a message in popup modal displayed when installing a snap for the first time."
   },
   "snapsSettingsDescription": {
     "message": "Snaplerini yönet"
